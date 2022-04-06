@@ -7,7 +7,7 @@ Portfólio de projetos Front-end
 ### Front-end
 - Html
 - CSS
-- JS
+- JavaScript
 
 ### Back-end
 PHP e MySQL
