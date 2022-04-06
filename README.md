@@ -1,2 +1,2 @@
-# jessyca-jca26.github.io
+# Portfólio da Jessica
 Portfólio de projetos Front-End
