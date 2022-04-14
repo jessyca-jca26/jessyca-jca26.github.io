@@ -44,6 +44,9 @@ header{
     text-transform: uppercase;
     position: sticky; /*Deixar o cabeçalho fixo*/
     top:0;
+
+    z-index: 1000; /*Ajuste de aprofundidade(eixo z)
+    Quanto maior mais a frente fica*/
     
    
 }
@@ -100,6 +103,8 @@ nav h2 a:focus,
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: whitesmoke;
 
 }
 
