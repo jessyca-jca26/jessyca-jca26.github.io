@@ -44,12 +44,12 @@
             <form action="" method=post>
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" required> 
+                    <input type="text" name="nome" id="nome" required>
                 </div>
 
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" required>  
+                    <input type="email" name="email" id="email" required>
                 </div>
 
                 <div>
@@ -90,11 +90,38 @@
                     <input type="checkbox" name="interesses" id="programação">
                     <label for="programação">Programação</label>
                 </div>
+                <!-- INÍCIO HTML PARA CEP/ENDEREÇO -->
+
+
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" required>
+                    <button id="localizar-cep">Localizar</button>
+                    <b id="status"></b>
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" size="30">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <!-- /FIM HTML PARA CEP/ENDEREÇO -->
+
 
                 <div>
                     <label for="assunto">Assunto:</label>
                     <select name="assunto" id="assunto">
-                        <option></option> 
+                        <option></option>
                         <option>Duvidas</option>
                         <option>Elogios</option>
                         <option>Reclamações</option>
@@ -113,7 +140,7 @@
                 <button type="submit">Enviar dados</button>
                 <!-- Pode ser assim tambem: -->
                 <!-- <input type="button" value=" Enviar dados"> -->
-                
+
 
 
 
@@ -136,7 +163,12 @@
         </p>
     </footer>
 
+    <!--Importação da Lib (precisa vir primeiro)-->
+    <script src="js/vanilla-masker.min.js"></script>
+
     <script src="js/menu.js"></script>
+
+    <script src="js/scripts.js"></script>
 
 </body>
 
