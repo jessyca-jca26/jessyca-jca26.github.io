@@ -52,4 +52,40 @@ botaoLocalizar.addEventListener("click", function (event) {
 /* Lib VanillaMasker:
 https://github.com/vanilla-masker/vanilla-masker */
 VMasker(inputCep).maskPattern("99999-999");
-VMasker(inputTelefone).maskPattern("(99) 9999-9999");
+VMasker(inputTelefone).maskPattern("(99) 9999-9999")
+
+
+
+
+
+
+/* Programação do contador de caracteres do campo mensagem */
+const spanMaximo = formulario.querySelector("#maximo");
+const bCaracteres = formulario.querySelector("#caracteres");
+const textMensagem = formulario.querySelector("#mensagem");
+
+// Determinar a quantidade maxima de caracteres
+let quantidade = 100;
+
+textMensagem.addEventListener("input", function () {
+    
+    // Capturado o que for digitado
+    let conteudo = textMensagem.value;
+
+    // Criando uma contagem regressiva
+    let contagem = quantidade - conteudo.length;
+
+    bCaracteres.textContent = contagem;
+
+    /* Se for zero, vermelho, Senão preto */
+
+    if (contagem == 0) {
+        bCaracteres.style.color = "red";
+        textMensagem.style.boxShadow = " red 0 0 10px";
+        
+    } else {
+        bCaracteres.style.color = "black";
+        textMensagem.style.boxShadow = " black 0 0 10px";
+    }
+
+});
