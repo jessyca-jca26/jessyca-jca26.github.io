@@ -10,6 +10,7 @@ const bStatus = formulario.querySelector("#status");
 const botaoLocalizar = formulario.querySelector("#localizar-cep");
 
 botaoLocalizar.addEventListener("click", function (event) {
+  event.preventDefault();
     // Entre no site: viacep.com.br
 
     /* Pegar o cep digitado*/
